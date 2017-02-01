@@ -2,12 +2,12 @@ public void setup()
 {
 	background(0);
 	size(600,600);
-	stroke(0,0,0,0);
+	stroke(255,255,255,50);
 	fractal(300, 300, 600, 255);
 }
 public void fractal(int x, int y, int size, int tone)
 {
-	if (size < 11)
+	if (size < 15)
 	{
 		ellipse(x, y, size, size);
 	}
