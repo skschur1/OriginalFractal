@@ -7,7 +7,7 @@ public void setup()
 }
 public void fractal(int x, int y, int size, int tone)
 {
-	if (size < 1)
+	if (size < 11)
 	{
 		ellipse(x, y, size, size);
 	}
