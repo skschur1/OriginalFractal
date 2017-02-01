@@ -3,7 +3,7 @@ public void setup()
 {
 	background(0);
 	size(600,600);
-	stroke(255,255,255,1);
+	stroke(255,255,255,2);
 	frameRate(10);
 }
 public void draw()
@@ -15,7 +15,7 @@ public void draw()
 }
 public void fractal(int x, int y, int size, int tone)
 {
-	if (size < 5)
+	if (size < 4)
 	{
 		ellipse(x, y, size, size);
 	}
