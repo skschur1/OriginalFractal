@@ -15,18 +15,18 @@ public void draw()
 }
 public void fractal(int x, int y, int size, int tone)
 {
-	if (size < 4)
+	if (size < 15)
 	{
 		ellipse(x, y, size, size);
 	}
 	else 
 	{
-		if (size%3 ==0)
+		if (size%4 ==0)
 			fill(tone, 0, 0, 3);
 		else if (size%2 ==0)
 			fill(0, tone, 0, 3);
 		else 
-			fill(0, 0,tone, 3);
+			fill(0, 0,tone, 5);
 		ellipse(x, y, size, size);
 		fractal(x - size/4, y, size/2, 255 -size);
 		fractal(x + size/4, y, size/2, 255 -size);
